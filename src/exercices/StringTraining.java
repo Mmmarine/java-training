@@ -74,7 +74,7 @@ public class StringTraining {
      * @param string, eg: "test"
      * @return first character of the string, eg: 't'
      */
-     public static char firstChar(String string) {
+    public static char firstChar(String string) {
 
         return string.charAt(0);
     }
@@ -115,8 +115,13 @@ public class StringTraining {
      * @return the number of character occurrences in string, eg: 2
      */
     public static int occurrences(String string, char search) {
-
-        return 0;
+        int tot = 0;
+        for (int i = 0; i < string.length(); i++){
+            if (string.charAt(i) == search) {
+                tot += 1;
+            }
+        }
+        return tot;
     }
 
     /**
@@ -160,7 +165,7 @@ public class StringTraining {
     public static String join(String[] strings, String delimiter) {
         // https://howtodoinjava.com/java8/java-8-join-string-array-example/
 
-        return String.join(";",strings);
+        return String.join("delimiter",strings);
 
     }
 }
