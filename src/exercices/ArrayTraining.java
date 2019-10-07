@@ -91,8 +91,7 @@ public class ArrayTraining {
      */
     public int[] replace(int[] array, int value, int position) {
 
-        int i = array[position];
-        array[i] = value;
+        array[position] = value;
         return array;
     }
 
