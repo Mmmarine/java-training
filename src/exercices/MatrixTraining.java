@@ -84,7 +84,7 @@ public class MatrixTraining {
      * eg: {{1, 2, 3}, {4, 5, 6}}
      */
     public int[][] replace(int[][] matrix, int value, int line, int column) {
-        matrix = new int[line][column];
+
         matrix[line][column] = value;
         return matrix;
     }
@@ -110,7 +110,7 @@ public class MatrixTraining {
      */
     public boolean contains(int[][] matrix, int search) {
        for (int i = 0; i < matrix[i].length; i++) {
-            for (int index = 0; index < matrix[index].length; index++) {
+            for (int index = 0; index < matrix[0].length; index++) {
                 if (matrix[i][index] == search){
                     return true;
                 }
@@ -142,8 +142,8 @@ public class MatrixTraining {
      */
     public int occurrences(char[][] matrix, char search) {
         int result = 0;
-        for (int i = 0; i < matrix[i].length; i++ ){
-            for (int index = 0; i < matrix[index].length; index++) {
+        for (int i = 0; i < matrix.length; i++ ){
+            for (int index = 0; index < matrix[0].length; index++) {
                 if (matrix[i][index] == search){
                     result += 1;
                 }
