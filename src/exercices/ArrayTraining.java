@@ -158,12 +158,14 @@ public class ArrayTraining {
      * @return array with reversed values, eg: {3, 2, 1}
      */
     public int[] reverse(int[] array) {
-        array = new int[array.length];
-            for (int i  = 0; i < array.length; i++){
-                array[i] = array [array.length - i];
+        int[] array2 = new int[array.length];
+        int j = 0;
+            for (int i = array.length - 1; i >= 0; i--) {
+                array2[j] = array[i];
+                j = j + 1;
             }
 
-        return array;
+        return array2;
     }
 
     /**
