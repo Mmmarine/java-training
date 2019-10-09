@@ -18,10 +18,10 @@ public class StringTraining {
      */
     public static boolean equals(String origin, String compare) {
         if (origin.equals (compare)){
-            return false;
+            return true;
         }
         else{
-            return true;
+            return false;
         }
     }
 
@@ -106,7 +106,8 @@ public class StringTraining {
      */
     public static String capitalize(String string) {
 
-        return string.substring(0,1).toUpperCase() + string.substring(1, string.length() -1);
+        return string.substring(0, 1).toUpperCase() + string.substring(1);
+
     }
 
     /**
@@ -165,7 +166,7 @@ public class StringTraining {
     public static String join(String[] strings, String delimiter) {
         // https://howtodoinjava.com/java8/java-8-join-string-array-example/
 
-        return String.join("delimiter",strings);
+        return String.join(delimiter,strings);
 
     }
 }
