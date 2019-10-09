@@ -49,7 +49,7 @@ public class StringTraining {
      */
     public static int length(String string) {
 
-        return Integer.valueOf(string);
+        return string.length();
     }
 
     /**
